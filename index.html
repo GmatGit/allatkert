@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Állatkert</title>
+  </head>
+  <body>
+    <template id="newAnimRow">
+      <tr>
+        <td class="ID">id</td>
+        <td class="NAME">name</td>
+        <td class="SPECIES">species</td>
+        <td class="AGE">age</td>
+      </tr>
+    </template>
+
+    <template id="newSpecRow">
+      <tr>
+        <td class="COUNT">count</td>
+        <td class="SPECIES">species</td>
+      </tr>
+    </template>
+
+    <header class="container">
+      <div class="container">
+        <h1 class="text-decoration-underline text-break text-center">Állatkert</h1>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="table-responsive">
+        <table class="table table-bordered" id="animalTable">
+          <caption>
+            Az állatkerti állatok listája
+          </caption>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>NÉV</th>
+              <th>FAJ</th>
+              <th>KOR</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-bordered" id="byspeciesTable">
+          <caption>
+            Az állatkerti állatok darabszáma fajok szerint
+          </caption>
+          <thead>
+            <tr>
+              <th>DB</th>
+              <th>FAJ</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="container">
+      <h3 class="text-danger text-center text-break" id="jelento"></h3>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
